@@ -3,7 +3,7 @@
 
 주요 클래스 위치 = Java_Project_Egg_Hatch/app/src/main/java/com/wooz/song/egg/  
 
-xml 위치  = Java_Project_Egg_Hatch/app/src/main/res/layout/
+메인, 서브 액티비티 xml 위치  = Java_Project_Egg_Hatch/app/src/main/res/layout/
 
 기타 자료 위치 = Java_Project_Egg_Hatch/app/src/main/res/
 
