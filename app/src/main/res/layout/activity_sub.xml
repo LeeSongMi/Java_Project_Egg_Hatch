@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wooz.song.egg.SubActivity"
+    android:background="@drawable/back_img">
+
+    <ImageView
+        android:id="@+id/chick"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="17dp"
+        app:srcCompat="@drawable/chick" />
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/chick"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        app:srcCompat="@drawable/cat" />
+
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignLeft="@+id/chick"
+        android:layout_alignStart="@+id/chick"
+        android:layout_below="@+id/chick"
+        android:layout_marginTop="110dp"
+        app:srcCompat="@drawable/dog" />
+
+    <ImageView
+        android:id="@+id/unicorn"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignLeft="@+id/cat"
+        android:layout_alignStart="@+id/cat"
+        android:layout_alignTop="@+id/dog"
+        app:srcCompat="@drawable/unicorn" />
+
+    <TextView
+        android:id="@+id/chick_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chick"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="25dp"
+
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/cat_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chick_num"
+        android:layout_alignBottom="@+id/chick_num"
+        android:layout_marginLeft="230dp"
+
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/dog_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/chick_num"
+        android:layout_alignRight="@+id/chick_num"
+        android:layout_below="@+id/dog"
+        android:layout_marginTop="25dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/unicorn_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cat_num"
+        android:layout_alignStart="@+id/cat_num"
+        android:layout_below="@+id/unicorn"
+        android:layout_marginTop="25dp"
+        android:text="TextView" />
+</RelativeLayout>

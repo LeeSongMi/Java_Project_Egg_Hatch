@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wooz.song.egg.MainActivity"
+    android:background="@drawable/back_img">
+
+
+    <Button
+        android:id="@+id/Gall_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/Joy_btn"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/Joy_btn"
+        android:text="G" />
+
+    <ImageView
+        android:id="@+id/Egg_img"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_above="@+id/Eat_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="80dp"
+        app:srcCompat="@drawable/egg" />
+
+    <Button
+        android:id="@+id/Eat_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:onClick="btnMove"
+        android:text="밥주기" />
+
+    <Button
+        android:id="@+id/Water_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Eat_btn"
+        android:layout_toEndOf="@+id/Eat_btn"
+        android:layout_toRightOf="@+id/Eat_btn"
+        android:onClick="btnMove"
+        android:text="물주기" />
+
+    <Button
+        android:id="@+id/Sleep_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Water_btn"
+        android:layout_toEndOf="@+id/Water_btn"
+        android:layout_toRightOf="@+id/Water_btn"
+        android:onClick="btnMove"
+        android:text="재우기" />
+
+    <Button
+        android:id="@+id/Joy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Sleep_btn"
+        android:layout_alignBottom="@+id/Sleep_btn"
+        android:layout_toEndOf="@+id/Sleep_btn"
+        android:layout_toRightOf="@+id/Sleep_btn"
+        android:onClick="btnMove"
+        android:text="놀아주기" />
+
+    <ProgressBar
+        android:id="@+id/Ex_gauge"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Gall_btn"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/Gall_btn"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/Gall_btn"
+        android:layout_marginTop="26dp"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Eat_btn"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Eat_btn"
+        android:layout_marginTop="45dp"
+        android:text="경험치 게이지"
+        android:textColor="@android:color/black" />
+</RelativeLayout>
